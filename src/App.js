@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,28 +6,37 @@ class App extends Component {
     super();
 
     this.state = {
-      string: 'Hello Al D.'
+      companies: [
+        { 
+          name: 'Coinbase', id: 'career1'
+        },
+        { 
+          name: 'Workday', id: 'career2'
+        },
+        { 
+          name: 'Amazon', id: 'career3'
+        },
+        { 
+          name: 'Twilio', id: 'career4'
+        },
+        { 
+          name: 'Nvidia', id: 'career5'
+        }, 
+      ]
     }
   }
+    componentDidMount(){
+      fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json().then(users => console.log(users)))
+    }
+  
   render() {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h1>{this.state.string}</h1>
-          <p>
-            To edit go to:<code>src/App.js</code> and save to reload.
-          </p>
-          <button onClick={() => this.setState({ string: 'Hello Jac' })}>Change text</button>
-          <a
-            className='App-link'
-            href='https://reactjs.org'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Learn React
-          </a>
-        </header>
+        {
+          // Only renders or changes the element that id that has been modify on the DOM v
+          // ia the map array method to create a new array
+          this.state.companies.map(company => (<h1 key= { company.id }>{ company.name }</h1>))
+        }
       </div>
     );
   }
