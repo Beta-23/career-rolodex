@@ -6,27 +6,14 @@ class App extends Component {
     super();
 
     this.state = {
-      companies: [
-        { 
-          name: 'Coinbase', id: 'career1'
-        },
-        { 
-          name: 'Workday', id: 'career2'
-        },
-        { 
-          name: 'Amazon', id: 'career3'
-        },
-        { 
-          name: 'Twilio', id: 'career4'
-        },
-        { 
-          name: 'Nvidia', id: 'career5'
-        }, 
-      ]
-    }
+      companies: []
+    };
   }
+  // Life Cycle Method because of the class component
     componentDidMount(){
-      fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json().then(users => console.log(users)))
+      fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(users => this.setState({ companies: users }));
     }
   
   render() {
