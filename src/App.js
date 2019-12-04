@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { CardList } from './components/card-list/card-list.component';
+
 import './App.css';
 
 class App extends Component {
@@ -19,11 +22,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+      <CardList name= 'Al'>
         {
           // Only renders or changes the element that id that has been modify on the DOM v
           // ia the map array method to create a new array
           this.state.companies.map(company => (<h1 key= { company.id }>{ company.name }</h1>))
         }
+      </CardList>
+        
       </div>
     );
   }
