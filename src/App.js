@@ -9,7 +9,8 @@ class App extends Component {
     super();
 
     this.state = {
-      robots: []
+      robots: [],
+      searchField: ''
     };
   }
   // Life Cycle Method because of the class component
@@ -22,10 +23,17 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      <CardList robots= {this.state.robots}>
-        
-      </CardList>
-        
+      <input 
+        type='search' 
+        placeholder= 'Search Robot' 
+        onChange={e => {
+          this.setState({ searchField: e.target.value }, () => 
+          console.log(this.state)
+          );
+        }} 
+      />
+      <CardList robots= {this.state.robots} />
+ 
       </div>
     );
   }
