@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/career-rolodex/static/css/main.5e10442b.chunk.css",
+    "main.js": "/career-rolodex/static/js/main.b3352683.chunk.js",
+    "main.js.map": "/career-rolodex/static/js/main.b3352683.chunk.js.map",
+    "runtime-main.js": "/career-rolodex/static/js/runtime-main.324940a8.js",
+    "runtime-main.js.map": "/career-rolodex/static/js/runtime-main.324940a8.js.map",
+    "static/js/2.c690ae41.chunk.js": "/career-rolodex/static/js/2.c690ae41.chunk.js",
+    "static/js/2.c690ae41.chunk.js.map": "/career-rolodex/static/js/2.c690ae41.chunk.js.map",
+    "index.html": "/career-rolodex/index.html",
+    "precache-manifest.a862f75ec32cb5b7d0d24651347f6245.js": "/career-rolodex/precache-manifest.a862f75ec32cb5b7d0d24651347f6245.js",
+    "service-worker.js": "/career-rolodex/service-worker.js",
+    "static/css/main.5e10442b.chunk.css.map": "/career-rolodex/static/css/main.5e10442b.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.324940a8.js",
+    "static/js/2.c690ae41.chunk.js",
+    "static/css/main.5e10442b.chunk.css",
+    "static/js/main.b3352683.chunk.js"
+  ]
+}
