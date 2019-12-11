@@ -6,6 +6,7 @@ import { SearchBox } from './components/search-box/search-box.component';
 import './App.css';
 
 class App extends Component {
+  // constructor runs first before anything else gets called
   constructor() {
     super();
 
