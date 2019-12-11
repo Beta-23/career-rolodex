@@ -21,16 +21,20 @@ class App extends Component {
       .then(response => response.json())
       .then(users => this.setState({ robots: users }));
     }
-  
+    // e => binds the this.method
+    handleChange = (e) => {
+      this.setState({ searchField: e.target.value })
+    }
   render() {
     const { robots, searchField } = this.state;
     const filteredRobots = robots.filter(robot => 
       robot.name.toLowerCase().includes(searchField.toLowerCase()));
+      
     return (
       <div className='App'>
       <SearchBox 
         placeholder= 'Search Robot' 
-        handleChange= { e => this.setState({ searchField: e.target.value }) }
+        handleChange= {this.handleChange}
       />
       <CardList robots= {filteredRobots} />
       </div>
