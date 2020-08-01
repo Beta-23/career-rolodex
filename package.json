@@ -5,6 +5,8 @@
   "homepage": "https://Beta-23.github.io/career-rolodex",
   "dependencies": {
     "acorn": "^7.2.0",
+    "dot-prop": "^5.1.1",
+    "elliptic": "^6.5.3",
     "gh-pages": "^2.1.1",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
