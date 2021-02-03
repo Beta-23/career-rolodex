@@ -2,7 +2,25 @@
   text-align: center;
 }
 
-.App-logo {
+h1 {
+font-family: 'Righteous', cursive;
+font-size: 72px;
+color: rgb(0, 139, 116);
+/* text-shadow: -1px 0 greenyellow, 0 1px greenyellow, 1px 0 greenyellow, 0 -1px greenyellow; */
+text-shadow: 3px 3px 2px greenyellow;
+}
+
+h2 {
+font-family: 'Lakki Reddy', cursive;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+  font-family: 'Righteous', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* .App-logo {
   animation: App-logo-spin infinite 30s linear;
   height: 40vmin;
 }
@@ -29,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,19 +1,38 @@
 {
   "name": "career-rolodex",
-  "version": "0.1.0",
+  "version": "^1.21.1",
   "private": true,
+  "homepage": "https://Beta-23.github.io/career-rolodex",
   "dependencies": {
+
     "object-path": "^0.11.5",
+
+    "@hapi/hoek": "^8.5.1",
+    "acorn": "^7.2.0",
+    "dot-prop": "^5.1.1",
+    "elliptic": "^6.5.3",
+    "gh-pages": "^2.1.1",
+    "immer": "8.0.1",
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.19",
+    "minimist": "^1.2.5",
+    "node-forge": "^0.10.0",
+    "node-notifier": "8.0.1",
+
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0",
-    "serialize-javascript": "^2.1.1"
+    "react-scripts": "^3.2.0",
+    "serialize-javascript": "^3.1.0",
+    "websocket-extensions": "^0.1.4",
+    "yargs-parser": "^13.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
