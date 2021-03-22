@@ -4,8 +4,6 @@
   "private": true,
   "homepage": "https://Beta-23.github.io/career-rolodex",
   "dependencies": {
-
-    "object-path": "^0.11.5",
     "@hapi/hoek": "^8.5.1",
     "acorn": "^7.2.0",
     "dot-prop": "^5.1.1",
@@ -17,7 +15,9 @@
     "minimist": "^1.2.5",
     "node-forge": "^0.10.0",
     "node-notifier": "8.0.1",
+    "object-path": "^0.11.5",
     "react": "^16.12.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.12.0",
     "react-scripts": "^3.2.0",
     "serialize-javascript": "^3.1.0",
