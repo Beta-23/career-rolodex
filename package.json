@@ -12,7 +12,7 @@
     "gh-pages": "^2.1.1",
     "glob-parent": "^5.1.2",
     "handlebars": "^4.7.7",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "is-svg": "^4.2.2",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.21",
